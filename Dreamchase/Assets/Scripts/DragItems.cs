@@ -27,3 +27,4 @@ public class DragItems : MonoBehaviour
         isDrag = false;
     }
 }
+    

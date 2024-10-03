@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: 63a543cb4a7c1124e93183b474b2e2e1
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - BatAttacker: {fileID: 1242449618983582843, guid: 1a13e8ed217e4e44c86c21005b6c0732, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
