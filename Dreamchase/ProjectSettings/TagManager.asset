@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Bat
   - Tower
+  - TowerBulletHit
+  - EnemyBulletHit
+  - SpriteOrb
   layers:
   - Default
   - TransparentFX

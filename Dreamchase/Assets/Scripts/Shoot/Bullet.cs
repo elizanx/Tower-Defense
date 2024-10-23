@@ -1,16 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Bullet : MonoBehaviour
 {
     public float angle = 45;
     Vector3 velocity;
     Vector3 direction;
-    float speed = 15f;
-
-
-    float bulletDamage = 10f;
+    float speed = 10f;
+    
+    private float bulletDamage = 10f;
 
     // Start is called before the first frame update
     void Start()
@@ -32,7 +32,6 @@ public class Bullet : MonoBehaviour
         set { bulletDamage = value; }
     }
 
-
     private void OnTriggerEnter2D(UnityEngine.Collider2D collision)
     {
         Enemy enemy = collision.gameObject.GetComponent<Enemy>();
@@ -43,6 +42,7 @@ public class Bullet : MonoBehaviour
         }
 
         Destroy(gameObject);
+        
     }
 }
 

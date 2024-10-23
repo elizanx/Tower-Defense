@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7a32b33bc8eaafc48a51ff20f4067df8
+guid: 1a82fab75616c2b40bf0fae9b6e4d331
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -121,7 +121,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: StonePath
+  - name: Background
     originalName: 
     pivot: {x: 0.5, y: 0}
     alignment: 9
@@ -132,7 +132,7 @@ ScriptedImporter:
       y: 4
       width: 32
       height: 32
-    spriteID: 975f37d6c19d21642b43446d159c81cd
+    spriteID: cf7de86d7cc15c448b92e0c82da7917f
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -144,13 +144,13 @@ ScriptedImporter:
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 1192127436
-    name: StonePath
+    guid: -1021688250
+    name: Background
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: StonePath
+    - name: Background
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
@@ -158,7 +158,7 @@ ScriptedImporter:
         y: 0
         width: 32
         height: 32
-      spriteId: 975f37d6c19d21642b43446d159c81cd
+      spriteId: cf7de86d7cc15c448b92e0c82da7917f
     linkedCells: []
     parentIndex: -1
   platformSettings:
