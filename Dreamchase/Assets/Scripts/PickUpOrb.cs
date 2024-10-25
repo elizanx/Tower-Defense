@@ -1,9 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEditor;
+
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using static UnityEditor.Progress;
+
 
 public class PickUpOrb : MonoBehaviour
 {
@@ -19,25 +17,19 @@ public class PickUpOrb : MonoBehaviour
     {
         
     }
-
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("SpriteOrb"))
-
+        Debug.Log("fghj");
+        if (other.gameObject.CompareTag("Bat"))
         {
             Debug.Log("collide");
-            PickUpItem(other.gameObject);
-            SceneManager.LoadScene("Defeat");
+
+
+            Destroy(gameObject);
+            SceneManager.LoadScene("GameOver");
         }
-
     }
-    void PickUpItem(GameObject SpriteOrb)
-    {
-
-        Destroy(SpriteOrb);
-
-    }
-
    
-   
+
+
 }

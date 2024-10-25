@@ -1,16 +1,21 @@
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
-using UnityEngine.SceneManagement;
+
 
 public class Bullet : MonoBehaviour
 {
-    public float angle = 45;
+    public float angle = 45f;
     Vector3 velocity;
     Vector3 direction;
     float speed = 10f;
     
-    private float bulletDamage = 10f;
+
+
+    public float bulletDamage = 10f;
+
+    
+
+    
 
     // Start is called before the first frame update
     void Start()
@@ -32,12 +37,15 @@ public class Bullet : MonoBehaviour
         set { bulletDamage = value; }
     }
 
-    private void OnTriggerEnter2D(UnityEngine.Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
+   
         Enemy enemy = collision.gameObject.GetComponent<Enemy>();
+        
 
         if (enemy != null)
         {
+            Debug.Log("Werkt dit");
             enemy.TakeDamage(bulletDamage);
         }
 

@@ -1,7 +1,4 @@
 # TowerDefenseTemplate
-Dit is een template wat door jullie te gebruiken is voor het juist inleveren van alle producten voor de Towerdefense beroepsopdracht. **Verwijder uiteindelijk de template teksten!**
-
-Begin met een korte omschrijving van je towerdefense game en hoe deze werkt. Plaats ook een paar screenshots.
 Er is een enemy "Vleermuis" die je moet vernietigen voordat het de rode orb oppakt, je kan dat doen met de grote kasteel in het midden die arrows schiet en je kan de tower verplaatsen.
 
 ![not really my game](https://cdn.akamai.steamstatic.com/steam/apps/246420/ss_aaaf33cdb9106bd0801a36049516d95c6f2352b0.600x338.jpg?t=1686321490)
@@ -11,9 +8,6 @@ Er is een enemy "Vleermuis" die je moet vernietigen voordat het de rode orb oppa
 
 ## Product 1: "DRY SRP Scripts op GitHub"
 
-Plaats hier minimaal 1 link naar scripts die voldoen aan de eisen van **"Don't Repeat Yourself (DRY)"** en **"Single Responsibility Principle"**.
-Omschrijf hier waarom jij denkt dat je in die scripts aan deze eisen voldoet.
-
 # DRY
 Hier heb ik niet mee gewerkt omdat ik er niet aan toe kwam om mijn ideeën optijd toe tevoegen aan mijn game.
 
@@ -22,10 +16,10 @@ Maar als ik een wave system had toegevoegd aan mijn game zou ik een array gebrui
 # SRP
 In mijn script "Enemy" staat er dat als de health onder 100 is dat de enemy dood gaat en het wordt dan destroyed.
 
-[link naar script](/DreamChase/Assets/Scripts/Enemy.cs)"*
-
+[TowerDefense](/https://github.com/elizanx/Tower-Defense/blob/main/Dreamchase/Assets/Scripts/Enemy/Enemy.cs)"*
+ 
 ## Product 2: "Projectmappen op GitHub"
-Dit is de [ROOT](/DreamChase/) folder van mijn unity project.
+Dit is de [ROOT](/https://github.com/elizanx/Tower-Defense/tree/main/Dreamchase/) folder van mijn unity project.
 
 Zorg dat deze verwijst naar je Develop branch.
 
@@ -44,10 +38,10 @@ Plaats in je readme een animated gif van je gameplay (+- 10 sec.) waarin de impl
 ![Textures Sprites](readmeVisuals/texturesSprites.gif)
 
 ## Product 5: Issues met debug screenshots op GitHub 
-Ik heb geen issues aangemaakt van mijn bugs.
+Ik heb 3 issues, ik kreeg er eentje een dag van te voren na het builden.
+Ik kon één debuggen (arrows doen damage als het de vleermuis raakt) want ik had hetzelfde probleem een dag van te voren maar en ik had het gefixt binnen 10 minuten, helaas ging hij weer kapot tijdens het builden. Dus met andere woorden ik heb het niet helemaal kunnen debuggen.
 
-Zodra je bugs tegenkomt maak je een issue aan op github. In de issue omschrijf je het probleem en je gaat proberen via breakpoints te achterhalen wat het probleem is. Je maakt screenshot(s) van het debuggen op het moment dat je via de debugger console ziet wat er mis is. Deze screenshots met daarbij uitleg over het probleem en de bijhorende oplossing post je in het bijhorende github issue. 
-[Hier de link naar mijn issues](https://github.com/erwinhenraat/TowerDefenseTemplate/issues/)
+[Link naar mijn issues](https://github.com/elizanx/Tower-Defense/issues/)
 
 ## Product 6: Game design met onderbouwing 
 
@@ -59,72 +53,20 @@ Voorbeeld van een one page design:
 Omschrijf per mechanic welke game design keuzes je hebt gemaakt en waarom je dit hebt gedaan.
 
 *  **Je game bevat torens die kunnen mikken en schieten op een bewegend doel.** 
-Ik heb een toren het is een kasteel en je kan de heletijd schieten. Er zijn unlimited arrows waarmee je kan schieten waardoor de enemy sneller dood kan gaan. Ook kan je 360 graden ronddraaien met je muis en kan je nog steeds schieten.
+Ik heb een toren het is een kasteel en je kan de heletijd schieten. Er zijn unlimited arrows waarmee je kan schieten waardoor de enemy sneller dood kan gaan. Ook kan je 360 graden ronddraaien met je muis en kan je nog steeds schieten. Je gebruikt de linker muisknop voor dat.
 
 *  **Je game bevat vernietigbare vijanden die 1 of meerderen paden kunnen volgen.**  
-De enemy volgt een pad en moet de orb oppakken om te kunnen winnen dus het volgt de hele map rond.
-
-*  **Je game bevat een “wave” systeem waarmee er onder bepaalde voorwaarden (tijd/vijanden op) nieuwe waves met vijanden het veld in komen.**
-
-*Ik heb geen wave system.*
+De enemy volgt een pad die is gemaakt door middel van waypoints en het moet de orb kunnen oppakken om te winnen dus het volgt de hele map rond.
+Als je de enemy hebt gedood dan heb jij gewonnen maar als de enemy de orb heeft opgepakt voordat jij het hebt neergeschoten dan heeft de enemy gewonnen.
 
 *  **Een “health” systeem waarmee je levens kunt verliezen als vijanden hun doel bereiken en zodoende het spel kunt verliezen.** 
 
-*Telkens als de enemy wordt geraakt gaat er 10 health van de healthbar af.*
-
-*  **Een “resource” systeem waarmee je resources kunt verdienen waarmee je torens kunt kopen en .evt upgraden.**
-
-*Ik heb dit niet.*
-
-*  **Een “upgrade” systeem om je torens te verbeteren.**
-
-*Ik heb dit niet.*
-
-*  **Een “movement prediction” systeem waarmee je kan berekenen waar een toren heen moeten schieten om een bewegend object te kunnen raken. (Moeilijk)**
-
-*Ik heb dit niet.*
-
-## Product 7: Class Diagram voor volledige codebase 
-
-Je brengt je volledige codebase in kaart met behulp van een class diagram. Binnen de classes hoeven geen private members te worden weergegeven. Wel alle public members (fields en methods). Ook geef je indien relevant de relaties tussen je classes weer. Je class diagram plaats je in je readme op github. Evt mag je dit doen m.b.v de [“Mermaid”](https://mermaid.js.org/syntax/classDiagram.html) tool.
+*Rechts boven zie je een healthbar als de enemy dood is gaat de healthbar naar beneden en ga je naar een "Win" scene*
 
 
-```mermaid
----
-title: Animal example
----
-classDiagram
-    note "From Duck till Zebra"
-    Animal <|-- Duck
-    note for Duck "can fly\ncan swim\ncan dive\ncan help in debugging"
-    Animal <|-- Fish
-    Animal <|-- Zebra
-    Animal : +int age
-    Animal : +String gender
-    Animal: +isMammal()
-    Animal: +mate()
-    class Duck{
-        +String beakColor
-        +swim()
-        +quack()
-    }
-    class Fish{
-        -int sizeInFeet
-        -canEat()
-    }
-    class Zebra{
-        +bool is_wild
-        +run()
-    }
+## Product 7 & 8 hebben we geen les over gehad 
 
-```
-
-## Product 8: Prototype test video
-Ik heb geen werkende prototype gemaakt om een idee uit te testen.
-
-Je hebt een werkend prototype gemaakt om een idee te testen. Omschrijf if je readme wat het idee van de mechanics is geweest wat je wilde testen en laat een korte video van de gameplay test zien. 
-
-[![example test video](https://ucarecdn.com/dbdc3ad0-f375-40ad-8987-9e6451b28b50/)](https://www.youtube.com/watch?v=CzzRML1swF0)
+Dit heb ik niet gemaakt.
 
 ## Product 9: SCRUM planning inschatting 
 [Link naar de openbare trello](https://trello.com/b/v92Lbu4Y/dreamchase)

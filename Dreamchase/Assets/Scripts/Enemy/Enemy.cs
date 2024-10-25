@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-using static UnityEngine.Rendering.DebugUI;
+
 
 public class Enemy : MonoBehaviour
 {
@@ -11,9 +11,7 @@ public class Enemy : MonoBehaviour
     public float maxHealth = 100f;
 
     [SerializeField] private Slider healthSlider;
-    
 
-    // Start is called before the first frame update
     void Start()
     {
         currentHealth = maxHealth;
@@ -25,8 +23,6 @@ public class Enemy : MonoBehaviour
 
     }
 
-
-
     public void TakeDamage(float DamageAmount)
     {
         currentHealth -= DamageAmount;
@@ -34,13 +30,14 @@ public class Enemy : MonoBehaviour
         
         if (currentHealth <= 0)
         {
+            Debug.Log("Ga dood");
             Die();
-            SceneManager.LoadScene("Win");
         }
     }
     public void Die()
     {
         Destroy(gameObject);
+        SceneManager.LoadScene("Win");
     }
 
     

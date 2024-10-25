@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7722590606992188131}
   - component: {fileID: 5382308026859184585}
   - component: {fileID: 189618368676917904}
-  - component: {fileID: -6511761672619195944}
+  - component: {fileID: -641496509408356314}
   m_Layer: 0
   m_Name: SpriteArrow
   m_TagString: TowerBulletHit
@@ -74,7 +74,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 4
+  m_SortingOrder: 3
   m_Sprite: {fileID: 1859330820029790562, guid: f92377788464f4c48adf47d305589a62, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -99,7 +99,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   angle: 0
---- !u!58 &-6511761672619195944
+  bulletDamage: 10
+--- !u!58 &-641496509408356314
 CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
