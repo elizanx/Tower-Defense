@@ -19,17 +19,10 @@ public class PickUpOrb : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("fghj");
         if (other.gameObject.CompareTag("Bat"))
         {
-            Debug.Log("collide");
-
-
             Destroy(gameObject);
             SceneManager.LoadScene("GameOver");
         }
     }
-   
-
-
 }

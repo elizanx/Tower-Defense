@@ -45,7 +45,6 @@ public class Bullet : MonoBehaviour
 
         if (enemy != null)
         {
-            Debug.Log("Werkt dit");
             enemy.TakeDamage(bulletDamage);
         }
 

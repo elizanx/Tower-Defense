@@ -760,7 +760,7 @@ MonoBehaviour:
   - {fileID: 2051314844}
   - {fileID: 1896887800}
   - {fileID: 980745674}
-  moveSpeed: 5
+  moveSpeed: 4
 --- !u!212 &365207241
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4686,7 +4686,7 @@ Transform:
   m_GameObject: {fileID: 408046756819610805}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.23, y: -3.45, z: 0}
+  m_LocalPosition: {x: 5.46, y: -4.84, z: 0}
   m_LocalScale: {x: 0.867259, y: 0.867259, z: 4.0317}
   m_ConstrainProportionsScale: 0
   m_Children: []
