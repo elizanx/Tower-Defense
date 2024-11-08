@@ -4,11 +4,10 @@
 In mijn game "DreamChase" moet je de enemy "Bat" verslaan om te kunnen winnen, je doet dit doormiddel van het schieten van arrows.Je schiet vanuit een kasteel arrows op de bat, hierdoor gaat de enemy dood en je kan de tower "kasteel" ook verplaatsen. 
 De enemy kan winnen als het de rode orb op pakt.
 
+![Game](image.png)
 
+![MainMenu](Game2.png)
 
-![Game](file:///C:/MA/Leerjaar2/M1/Game1.png)
-
-![MainMenu](file:///C:/MA/Leerjaar2/M1/Game2.PNG)
 
 
 ## Product 1: "DRY SRP Scripts op GitHub"
@@ -33,7 +32,7 @@ Dit is de [ROOT](https://github.com/elizanx/Tower-Defense/tree/main/Dreamchase/)
 
 ## Product 4: Game met Sprites(animations) en Textures 
 
-![Textures Sprites](file:///C:/MA/Leerjaar2/M1/Gameplay.gif)
+![Textures Sprites](Gameplay.gif)
 
 ## Product 5: Issues met debug screenshots op GitHub 
 Ik heb 3 issues, ik kreeg er eentje een dag van te voren na het builden.
